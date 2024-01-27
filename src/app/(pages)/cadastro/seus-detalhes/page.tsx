@@ -5,10 +5,11 @@ import { Box, Button, Heading, Stack } from "@chakra-ui/react";
 import { Input } from "@/app/components/Input";
 import { useRouter } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { ICreateUserContent } from "../../utils/types/form";
+
 import { yupResolver } from "@hookform/resolvers/yup";
 import { ObjectSchema } from "yup";
-import { createUserSchema } from "../../utils/schemas/createUser";
+import { ICreateUserContent } from "@/app/utils/types/form";
+import { createUserSchema } from "@/app/utils/schemas/createUser";
 
 const SeusDetalhes: FC = () => {
   const router = useRouter();

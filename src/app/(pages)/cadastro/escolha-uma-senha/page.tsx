@@ -5,11 +5,12 @@ import { Box, Button, Heading, Icon, Stack, useToast } from "@chakra-ui/react";
 import { Input } from "@/app/components/Input";
 import { Eye, EyeSlash } from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
-import { createUserPasswordSchema } from "../../utils/schemas/createUser";
-import { ICreateUserContent } from "../../utils/types/form";
+
 import { ObjectSchema } from "yup";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { ICreateUserContent } from "@/app/utils/types/form";
+import { createUserPasswordSchema } from "@/app/utils/schemas/createUser";
 
 const EscolhaUmaSenha: FC = () => {
   const [showPassword1, setShowPassword1] = useState(false);
